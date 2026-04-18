@@ -1,5 +1,4 @@
 # JavaScript Notes
----
 
 A concise collection of my JavaScript notes, created for quick revision and understanding of core concepts.
 
