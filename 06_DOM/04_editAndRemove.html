@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }   
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        function addLang(langName){
+            let ul = document.querySelector('.language')
+            let li = document.createElement('li')
+            li.innerHTML = `${langName}`
+
+            ul.appendChild(li)
+        }
+        addLang("Ruby") // Added
+        addLang("Python")
+        // Most Basic Way
+
+        // Problem - traverses the whole tree everytime
+
+        // Optimised
+        function optimise(langName){
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(langName))
+            
+            document.querySelector(".language").appendChild(li)
+        }
+        optimise("Akshit")
+
+
+        // Edit
+        let secondLang = document.querySelector("li:nth-child(2)")
+        // secondLang.innerHTML = "Mojo" // Bad way
+        let newLi = document.createElement("li")
+        newLi.textContent = "Hello"
+        secondLang.replaceWith(newLi)
+
+        // Replace JS with TS
+        let newLang = document.createElement('li')
+        newLang.appendChild(document.createTextNode("TypeScript"))
+        let js = document.querySelector("li:nth-child(1)")
+        js.replaceWith(newLang)
+
+        // Delete
+        const lastLang = document.querySelector("li:last-child")
+        lastLang.remove()
+        </script>
+</body>
+</html>

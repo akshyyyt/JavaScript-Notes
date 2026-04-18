@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: white;
+}
+fieldset {
+    width: 220px;
+}
+legend {
+    font-size: 24px;
+}
+input {
+    margin: 8px
+}
+select {
+    margin: 8px;
+}
+#frm {
+    display: flex;
+    justify-content: center;
+}
+#bmi {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    font-size: 22px;
+}

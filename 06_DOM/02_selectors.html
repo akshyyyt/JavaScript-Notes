@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <title>DOM</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    let parent = document.querySelector('.parent')
+    // console.log(parent)
+    // console.log(parent.children) // HTML Collection
+    // console.log(parent.children[1]) // Gives Tuesday
+
+    for(let i=0; i < parent.children.length; i++){
+        // console.log(parent.children[i].innerHTML) // Logs all days
+    }
+
+    parent.children[1].style.color = "orange"
+
+    // console.log(parent.firstElementChild) // Monday wala child
+    // console.log(parent.lastElementChild) // Thurday
+
+    const dayOne = document.querySelector('.day')
+    // console.log(dayOne.parentElement) // Traverse to the parent element from the child, querySelector is a expensive operation
+    // console.log(dayOne.nextElementSibling) // Gives next sibling of dayOne ie Tuesday
+
+    // console.log("Nodes: ", parent.childNodes) // Nodelist(9).  text, div.day, text, div.day
+
+
+
+    </script>
+</html>

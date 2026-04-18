@@ -1,0 +1,38 @@
+#grey {
+    background-color: grey;
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    margin: 4px;
+}
+#white {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    margin: 4px;
+}
+#blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    margin: 4px;
+}
+#yellow {
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+    margin: 4px;
+}
+.main {
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+header {
+    text-align: center;
+    font-size: 44px;
+}

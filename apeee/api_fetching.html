@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Fetching</title>
+    <style>
+        body {background-color: black;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+
+    <script>
+        let api = fetch("https://dummyjson.com/products/1")
+
+        let div = document.querySelector("#main")
+        api.then((response) => {
+            return response.json()
+        })
+        .then((data) => {
+            div.appendChild(document.createTextNode(data.title))
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let ok = document.createElement('div')
+    
+    ok.className = "main"
+    ok.id = Math.random()
+    ok.setAttribute("title", "Akshit") // Round trip bachta hai, leke nhi ata value directly jake set karta hai .
+    ok.style.backgroundColor = "green"
+    ok.style.padding = "12px"
+    // ok.innerText = "Chai aur Code" // This overwites value and do round trips
+    // But all this is not showing on screeen
+
+    const myText = document.createTextNode("Chai aur code")
+    ok.appendChild(myText) // Second Way
+
+
+    document.body.appendChild(ok)
+    console.log(ok)
+</script>
+</html>
