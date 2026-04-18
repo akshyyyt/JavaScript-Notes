@@ -8,6 +8,7 @@ This repository contains topic-wise JavaScript notes with simple explanations an
 Useful for beginners and for fast revision.
 
 **Topics**  
+  
 Basics (Variables, Data Types)  
 Control Flow (if-else, loops)  
 Functions & Scope  
@@ -17,6 +18,7 @@ ES6+ Features
 Async JavaScript (Promises, Async/Await)  
 
 **Notes**  
+  
 Beginner-friendly  
 Example-driven  
 Continuously updated  
