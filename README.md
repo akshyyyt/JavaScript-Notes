@@ -1,4 +1,5 @@
-#JavaScript Notes
+# JavaScript Notes
+---
 
 A concise collection of my JavaScript notes, created for quick revision and understanding of core concepts.
 
@@ -21,6 +22,6 @@ Beginner-friendly
 Example-driven
 Continuously updated
 
-**If you find this helpful, consider giving it a star.
+**If you find this helpful, consider giving it a star.**
 
-Author - Akshit**
+**Author - Akshit**
